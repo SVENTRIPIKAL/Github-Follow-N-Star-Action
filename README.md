@@ -42,9 +42,11 @@ A personalized program that helps users follow back their Github followers and s
 
 4. **Create Repository Secrets** 🤐
     - *`{repo-fork-name}` > Settings > Secrets and Variables > Actions*
+      
     - *Create 2 New Repository Secrets:*
         1. *PERSONAL_ACCESS_TOKEN*
             - `Bearer {paste-the-personal-access-token-value-you-copied-earlier}`
+              
         2. *PERSONAL_USERNAME*
             - `{your-github-username}`
 
@@ -70,6 +72,7 @@ on:
 ## Workflow Timings
 - **Environment Setup:**
     - *~8 seconds*
+      
 - **Cost Per Follower:**
     - *~7.28 seconds*
 
