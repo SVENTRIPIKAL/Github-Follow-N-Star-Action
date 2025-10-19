@@ -2,6 +2,7 @@ import pathlib
 from model.github_api_client import *
 
 
+# path to read/write file
 EXPLORED_LOGINS = pathlib.Path().resolve() / "EXPLORED_LOGINS"
 
 
