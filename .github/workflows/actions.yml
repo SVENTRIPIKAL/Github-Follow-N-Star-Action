@@ -2,7 +2,7 @@ name: Follow-N-Star-Action
 
 on:
   schedule:
-    - cron: '0 12 * * WED'  # run @12pm every Wednesday
+    - cron: '0 12 * * WED'  # run @12pm every Wednesday (~4x/month)
   workflow_dispatch:        # allow manual deployments
 
 jobs:
