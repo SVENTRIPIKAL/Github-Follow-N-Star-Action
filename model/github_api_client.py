@@ -142,7 +142,7 @@ class GithubApiClient:
         set_followers = get_key_from_json(json_list=await client_response.json(), key="login")
         # loop while headers link contains next page urls & update set
         while (client_response.headers.get("link") and
-               "rel=\"next\"" == client_response.headers.get("link")):
+               "rel=\"next\"" in client_response.headers.get("link")): # type: ignore
             url = url.replace(f"?page={page}", f"?page={page + 1}")
             page += 1
             client_response = await self.send_request(url=url, is_json=False)
