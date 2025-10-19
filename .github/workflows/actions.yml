@@ -7,11 +7,11 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # use linux environment
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v5.0.0   # check-out repository under $GITHUB_WORKSPACE so workflow can access it
+        uses: actions/checkout@v5.0.0   # check-out repository
 
       - name: Setup Python
         uses: actions/setup-python@v6.0.0   # install python version
