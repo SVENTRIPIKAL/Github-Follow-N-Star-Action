@@ -6,6 +6,7 @@ A personalized program that helps users follow back their Github followers and s
 <details>
   <summary><strong>Table of Contents</strong></summary>
 
+- [Terminal Example](#terminal-example)
 - [Initial Setup](#initial-setup)
 - [Running Workflow](#running-workflow)
 - [Workflow Timings](#workflow-timings)
@@ -15,6 +16,11 @@ A personalized program that helps users follow back their Github followers and s
 </details>
 <br />
 
+
+## Terminal Example
+<img src="./images/example-output.png" alt="Terminal Output Example" width="300">
+
+---
 
 ## Initial Setup
 1. **Fork The Repo** 🍴
