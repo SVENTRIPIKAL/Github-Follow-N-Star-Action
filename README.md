@@ -1,5 +1,5 @@
 # Github-Follow-N-Star ⭐
-A personalized program that helps users follow back their Github followers and star 4 of their top repositories in the process. This repository uses `Github Actions` to automate each build and execution.
+An automation program that helps users follow back their Github followers and star 4 of their top repositories in the process. This repository uses `Github Actions` to automate each build and execution.
 
 
 <br />
