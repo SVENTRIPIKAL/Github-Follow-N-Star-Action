@@ -1,5 +1,5 @@
 # Github-Follow-N-Star-Action ⭐
-A `Github Actions` program that helps users follow back their Github followers & star their 4 top repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely.
+A `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely.
 
 
 <br />
