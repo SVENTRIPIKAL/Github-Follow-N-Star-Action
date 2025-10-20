@@ -18,7 +18,7 @@ An automation program that helps users follow back their Github followers and st
 
 
 ## Terminal Example
-<img src="./images/example-output.png" alt="Terminal Output Example" width="350">
+<img src="./images/example-output.png" alt="Terminal Output Example" width="300">
 
 ---
 
