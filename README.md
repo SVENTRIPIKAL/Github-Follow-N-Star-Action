@@ -1,26 +1,22 @@
 # Github-Follow-N-Star-Action ⭐
-A Github Actions program that helps users follow back their Github followers & star 4 of their top repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely.
+A `Github Actions` program that helps users follow back their Github followers & star 4 of their top repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely.
 
 
 <br />
 <details>
   <summary><strong>Table of Contents</strong></summary>
 
-- [Terminal Example](#terminal-example)
 - [Initial Setup](#initial-setup)
-- [Running Workflow](#running-workflow)
-- [Workflow Timings](#workflow-timings)
+- [Running Actions Workflow](#running-actions-workflow)
+- [Actions Workflow Timing](#actions-workflow-timing)
 - [Github API Rate Limit & Actions Allowance](#github-api-rate-limit--actions-allowance)
+- [Running Project Locally](#running-project-locally)
+- [Output Example](#output-example)
 - [References](#references)
 - [Inspiration](#inspiration)
 </details>
 <br />
 
-
-## Terminal Example
-<img src="./images/example-output.png" alt="Terminal Output Example" width="350">
-
----
 
 ## Initial Setup
 1. **Fork The Repo** 🍴
@@ -60,7 +56,7 @@ A Github Actions program that helps users follow back their Github followers & s
 
 ---
 
-## Running Workflow
+## Running Actions Workflow
 - **Manual:**
     - *Manual executions can be achieved by visiting the repository's `Action` section, selecting the `Follow-N-Star-Action` workflow, and clicking `Run Workflow`*
 
@@ -75,7 +71,7 @@ on:
 
 ---
 
-## Workflow Timings
+## Actions Workflow Timing
 - **Environment Setup:**
     - *~8 seconds*
       
@@ -96,6 +92,41 @@ def check_user_api_info(self, threshold=4000):
 
 > [!TIP]
 > If the program stops early due to exceeding the `API threshold`, the workflow can be ran again after `1-hour` once the user's API rate limit has refreshed, since the program saves explored profiles to file and continues with those not saved to file (as long as `Actions` minutes remain).
+
+---
+
+## Running Project Locally
+Cloning your fork to your local machine may leave you with import errors in the python scripts. If your IDE does not automatically provide a solution for these, you will have to create a quick `virtual environment` in your `project directory` to install the requirements from the `terminal` & work from there.
+> [!NOTE]
+> For this project, make sure your IDE's `default interpreter` uses the environment's `python.exe` once it's created.
+1. Create Environment:
+    ```linux
+    python -m venv venv
+    ```
+2. Activate Environment:
+    ```linux
+    source ./venv/Script/activate
+    ```
+3. Verify Python & Pip Executables:
+    ```linux
+    (venv)
+    which python pip
+    
+    > .../venv/Scripts/python
+    > .../venv/Scripts/pip
+    ```
+4. Install Project Requirements:
+    ```linux
+    (venv)
+    pip install -r ./requirements.txt
+    ```
+
+    Once complete, your import errors should be gone and all `project requirements` can be found in `./venv/Lib/site-packages`
+
+---
+
+## Output Example
+<img src="./images/example-output.png" alt="Terminal Output Example" width="350">
 
 ---
 
@@ -128,6 +159,8 @@ For more information explaining previous topics and documentation used for commu
 * [Using Secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
 
 * [Github Actions Extensions](https://github.com/marketplace?type=actions)
+
+* [Creating Virtual Environments](https://docs.python.org/3/library/venv.html)
 
 ---
 
