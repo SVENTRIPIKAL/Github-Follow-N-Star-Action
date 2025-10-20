@@ -18,7 +18,7 @@ A personalized program that helps users follow back their Github followers and s
 
 
 ## Terminal Example
-<img src="./images/example-output.png" alt="Terminal Output Example" width="300">
+<img src="./images/example-output.png" alt="Terminal Output Example" width="350">
 
 ---
 
