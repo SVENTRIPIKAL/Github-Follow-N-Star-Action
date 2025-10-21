@@ -1,5 +1,5 @@
 # Github-Follow-N-Star-Action ⭐
-A `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely.
+A `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely on a weekly schedule.
 
 
 <br />
@@ -21,38 +21,39 @@ A `Github Actions` program that helps users follow back their Github followers &
 ## Initial Setup
 1. **Fork The Repository** 🍴
 
-2. **Delete Data In `EXPLORED_LOGINS` File** 📄
+2. **`Delete Data` In `EXPLORED_LOGINS` File** 📄
 
 > [!NOTE]
 > Forking the repo may already grant this permission, but just in case.
 
 3. **Grant Workflow Read/Write Permission** ✍️
-    - *`{repo-fork-name}` > Settings > Actions > General*
-    - *Workflow Permissions > Read and Write Permissions*
-    - *Save*
+    - *`{Repo_Fork_Name} > Settings > Actions > General`*
+    - Scroll Down to *`Workflow Permissions`*
+    - Click *`Read and Write Permissions`*
+    - Click *`Save`*
 
 4. **Create Personal Access Token** 🥇
-    - *Profile > Settings > Developer Settings > Personal Access Tokens > Tokens (Classic)*
-    - *Generate New Token (Classic)*
+    - *[Account > Settings > Developer Settings > Personal Access Tokens > Tokens (Classic)](https://github.com/settings/tokens)*
+    - *Click `Generate New Token > Generate New Token (Classic)`*
     - *Name Your Token (example: `GITHUB_API_FOLLOW_N_STAR`)*
-    - *Optional: Add Token Expiration*
+    - *Choose an Expiration Date*
     - *Select Scopes:*
         - *`public_repo`*
         - *`read:user`*
         - *`user:follow`*
-    - *Update Token*
+    - *Click `Generate Token`*
   > [!WARNING]
-  > Copy your personal access token value now. You won’t be able to see it again!
+  > `Copy` your `Personal Access Token value` now. You won’t be able to see it again!
 
 5. **Create Repository Secrets** 🤐
-    - *`{repo-fork-name}` > Settings > Secrets and Variables > Actions*
+    - *`{Repo_Fork_Name} > Settings > Secrets and Variables > Actions`*
       
     - *Create 2 Repository Secrets:*
-        1. *PERSONAL_ACCESS_TOKEN*
-            - `Bearer {paste-the-personal-access-token-value-you-copied-earlier}`
+        1. ***PERSONAL_ACCESS_TOKEN***
+            - *`Bearer {Paste_The_Personal_Access_Token_Value_You_Copied_Earlier}`*
               
-        2. *PERSONAL_USERNAME*
-            - `{your-github-username}`
+        2. ***PERSONAL_USERNAME***
+            - *`{Your_Github_Username}`*
 
 6. **Profit** 💸
 
@@ -84,9 +85,9 @@ on:
 
 ## Github API Rate Limit & Actions Allowance
 > [!IMPORTANT]
-> API Limit: 5,000 requests per/hr | Actions Allowance: 2,000-mins (500MB) per/Month.
+> API Limit: 5,000 requests per/Hour | Actions Allowance: 2,000 minutes (500MB) per/Month.
 
-Using the new `Personal Access Token` created earlier for this repository, API rates will be limited to `5,000 requests per hour`, as well as a `2,000 minute (500MB) Free Monthly Actions` allowance. Currently, the program only has a protection in place to prevent exceeding the user API limit rate:
+Using the new `Personal Access Token` created earlier for this repository, API rates will be limited to `5,000 requests per hour`, as well as a `2,000 minute (500MB) free monthly Actions` allowance. Currently, the program only has a protection in place to prevent exceeding the user API limit rate:
 ```python
 def check_user_api_info(self, threshold=4000):
 ``` 
