@@ -60,7 +60,7 @@ A `Github Actions` program that helps users follow back their Github followers &
 
 ## Running Actions Workflow
 - **Manual:**
-    - *Manual executions can be achieved by visiting the repository's `Action` section, selecting the `Follow-N-Star-Action` workflow, and clicking `Run Workflow`*
+    - *Manual executions can be achieved by visiting the repository's `Actions` section, selecting the `Follow-N-Star-Action` workflow, and clicking `Run Workflow`*
 
 - **Scheduled:**
     - *The program is scheduled to execute `@12pm every Wednesday`. This can be changed in the `.github/workflows/actions.yml` file by adjusting the `Cron Expression` to fit your needs*
