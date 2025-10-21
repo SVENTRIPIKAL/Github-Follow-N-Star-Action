@@ -19,17 +19,19 @@ A `Github Actions` program that helps users follow back their Github followers &
 
 
 ## Initial Setup
-1. **Fork The Repo** 🍴
+1. **Fork The Repository** 🍴
+
+2. **Delete Data In `EXPLORED_LOGINS` File** 📄
 
 > [!NOTE]
-> Forking the repo may already grant this permission but just in case
+> Forking the repo may already grant this permission, but just in case.
 
-2. **Grant Workflow Read/Write Permission** ✍️
+3. **Grant Workflow Read/Write Permission** ✍️
     - *`{repo-fork-name}` > Settings > Actions > General*
     - *Workflow Permissions > Read and Write Permissions*
     - *Save*
 
-3. **Create a Personal Access Token** 🥇
+4. **Create Personal Access Token** 🥇
     - *Profile > Settings > Developer Settings > Personal Access Tokens > Tokens (Classic)*
     - *Generate New Token (Classic)*
     - *Name Your Token (example: `GITHUB_API_FOLLOW_N_STAR`)*
@@ -42,17 +44,17 @@ A `Github Actions` program that helps users follow back their Github followers &
   > [!WARNING]
   > Copy your personal access token value now. You won’t be able to see it again!
 
-4. **Create Repository Secrets** 🤐
+5. **Create Repository Secrets** 🤐
     - *`{repo-fork-name}` > Settings > Secrets and Variables > Actions*
       
-    - *Create 2 New Repository Secrets:*
+    - *Create 2 Repository Secrets:*
         1. *PERSONAL_ACCESS_TOKEN*
             - `Bearer {paste-the-personal-access-token-value-you-copied-earlier}`
               
         2. *PERSONAL_USERNAME*
             - `{your-github-username}`
 
-5. **Profit** 💸
+6. **Profit** 💸
 
 ---
 
@@ -82,7 +84,7 @@ on:
 
 ## Github API Rate Limit & Actions Allowance
 > [!IMPORTANT]
-> API Limit: 5,000 requests per/hr | Actions Allowance: 2,000-mins (500MB) per/Month
+> API Limit: 5,000 requests per/hr | Actions Allowance: 2,000-mins (500MB) per/Month.
 
 Using the new `Personal Access Token` created earlier for this repository, API rates will be limited to `5,000 requests per hour`, as well as a `2,000 minute (500MB) Free Monthly Actions` allowance. Currently, the program only has a protection in place to prevent exceeding the user API limit rate:
 ```python
