@@ -5,15 +5,16 @@ A `Github Actions` program that helps users follow back their Github followers &
 <br />
 <details>
   <summary><strong>Table of Contents</strong></summary>
-
-- [Initial Setup](#initial-setup)
-- [Running Actions Workflow](#running-actions-workflow)
-- [Actions Workflow Timing](#actions-workflow-timing)
-- [Github API Rate Limit & Actions Allowance](#github-api-rate-limit--actions-allowance)
-- [Running Project Locally](#running-project-locally)
-- [Output Example](#output-example)
-- [References](#references)
-- [Inspiration](#inspiration)
+  
+  - [Initial Setup](#initial-setup)
+  - [Running Actions Workflow](#running-actions-workflow)
+  - [Actions Workflow Timing](#actions-workflow-timing)
+  - [Github API Rate Limit \& Actions Allowance](#github-api-rate-limit--actions-allowance)
+  - [Running Project Locally](#running-project-locally)
+  - [Output Example](#output-example)
+  - [References](#references)
+  - [Inspiration](#inspiration)
+  
 </details>
 <br />
 
@@ -161,7 +162,7 @@ For more information explaining previous topics and documentation used for commu
 
 * [Using Secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
 
-* [Github Actions Extensions](https://github.com/marketplace?type=actions)
+* [Github Actions Extensions](https://github.com/marketplace?verification=verified_creator&type=actions)
 
 * [Creating Virtual Environments](https://docs.python.org/3/library/venv.html)
 
