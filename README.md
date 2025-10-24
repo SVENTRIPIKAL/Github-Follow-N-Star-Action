@@ -23,11 +23,14 @@ A weekly `Github Actions` program that helps users follow back their Github foll
 1. **Clone The Repository** 👨‍🔬
     - [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSVENTRIPIKAL%2FGithub-Follow-N-Star-Action)
 
-1. **Delete Data in your <a href="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/blob/main/EXPLORED_LOGINS" target="_blank" rel="noopener noreferrer">EXPLORED_LOGINS</a> File** 📄
+1. **Delete Data in your <a href="./EXPLORED_LOGINS" target="_blank" rel="noopener noreferrer">EXPLORED_LOGINS</a> File** 📄
 
 1. **Create Github Actions Workflow** 👨‍💻
-    - Create *`.github/workflows/actions.yml`* in your Project Directory
-    - *`Copy and Paste`* the Contents from *<a href="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/blob/main/.github/workflows/actions.yml" target="_blank" rel="noopener noreferrer">actions.yml</a>*
+    - Click *`Add File > Create New File`* in your Project Directory
+    - Copy and Paste: 
+        - *`.github/workflows/actions.yml`* as the Name of your File
+        - The Contents from *<a href="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/blob/main/.github/workflows/actions.yml" target="_blank" rel="noopener noreferrer">actions.yml</a>* into your File
+    - Click *`Commit Changes`*
 
 1. **Grant Workflow Read/Write Permission** ✍️
     - *`{Cloned_Repo_Name} > Settings > Actions > General`*
