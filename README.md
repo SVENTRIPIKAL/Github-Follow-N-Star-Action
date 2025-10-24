@@ -1,5 +1,5 @@
 # Github-Follow-N-Star-Action ⭐
-A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process, and `Vercel` to simplify cloning this repository for users to their Github account.
+A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process and `Vercel` to simplify cloning this repository for users to their Github account.
 
 
 <br />
