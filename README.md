@@ -53,6 +53,7 @@ A weekly `Github Actions` program that helps users follow back their Github foll
 
 6. **Create Repository Secrets** 🤐
     - *`{Cloned_Repo_Name} > Settings > Secrets and Variables > Actions`*
+    
     - Create 2 Repository Secrets:
         1. ***PERSONAL_ACCESS_TOKEN***
             - *`Bearer {Paste_The_Personal_Access_Token_Value_You_Copied_Earlier}`*
