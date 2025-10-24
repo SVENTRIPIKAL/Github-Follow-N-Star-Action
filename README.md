@@ -56,7 +56,7 @@ A weekly `Github Actions` program that helps users follow back their Github foll
     
     - Create 2 Repository Secrets:
         1. ***PERSONAL_ACCESS_TOKEN***
-            - *`Bearer {Paste_The_Personal_Access_Token_Value_You_Copied_Earlier}`*
+            - *`Bearer {Personal_Access_Token_Value}`*
             
         2. ***PERSONAL_USERNAME***
             - *`{Your_Github_Username}`*
