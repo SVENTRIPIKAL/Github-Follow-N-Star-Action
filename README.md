@@ -1,5 +1,5 @@
 # Github-Follow-N-Star-Action ⭐
-A `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate building a Linux environment solely for deploying the script dedicated to this purpose & committing any changes remotely on a weekly schedule.
+A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process, and `Vercel` to simplify cloning this repository for users to their Github account.
 
 
 <br />
@@ -9,7 +9,7 @@ A `Github Actions` program that helps users follow back their Github followers &
   - [Initial Setup](#initial-setup)
   - [Running Actions Workflow](#running-actions-workflow)
   - [Actions Workflow Timing](#actions-workflow-timing)
-  - [Github API Rate Limit \& Actions Allowance](#github-api-rate-limit--actions-allowance)
+  - [Github API Rate Limit & Actions Allowance](#github-api-rate-limit--actions-allowance)
   - [Running Project Locally](#running-project-locally)
   - [Output Example](#output-example)
   - [References](#references)
@@ -20,43 +20,44 @@ A `Github Actions` program that helps users follow back their Github followers &
 
 
 ## Initial Setup
-1. **Fork The Repository** 🍴
+1. **Clone The Repository** 👨‍🔬
+    - [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FSVENTRIPIKAL%2FGithub-Follow-N-Star-Action)
 
-2. **`Delete Data` In `EXPLORED_LOGINS` File** 📄
+1. **Delete Data in your <a href="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/blob/main/EXPLORED_LOGINS" target="_blank" rel="noopener noreferrer">EXPLORED_LOGINS</a> File** 📄
 
-> [!NOTE]
-> Forking the repo may already grant this permission, but just in case.
+1. **Create Github Actions Workflow** 👨‍💻
+    - Create *`.github/workflows/actions.yml`* in your Project Directory
+    - *`Copy and Paste`* the Contents from *<a href="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/blob/main/.github/workflows/actions.yml" target="_blank" rel="noopener noreferrer">actions.yml</a>*
 
-3. **Grant Workflow Read/Write Permission** ✍️
-    - *`{Repo_Fork_Name} > Settings > Actions > General`*
+1. **Grant Workflow Read/Write Permission** ✍️
+    - *`{Cloned_Repo_Name} > Settings > Actions > General`*
     - Scroll Down to *`Workflow Permissions`*
     - Click *`Read and Write Permissions`*
     - Click *`Save`*
 
-4. **Create Personal Access Token** 🥇
+1. **Create Personal Access Token** 🥇
     - *[Account > Settings > Developer Settings > Personal Access Tokens > Tokens (Classic)](https://github.com/settings/tokens)*
-    - *Click `Generate New Token > Generate New Token (Classic)`*
-    - *Name Your Token (example: `GITHUB_API_FOLLOW_N_STAR`)*
-    - *Choose an Expiration Date*
-    - *Select Scopes:*
+    - Click *`Generate New Token > Generate New Token (Classic)`*
+    - Name Your Token (example: *`GITHUB_API_FOLLOW_N_STAR`*)
+    - Choose an Expiration Date
+    - Select Scopes:
         - *`public_repo`*
         - *`read:user`*
         - *`user:follow`*
-    - *Click `Generate Token`*
+    - Click *`Generate Token`*
   > [!WARNING]
   > `Copy` your `Personal Access Token value` now. You won’t be able to see it again!
 
-5. **Create Repository Secrets** 🤐
-    - *`{Repo_Fork_Name} > Settings > Secrets and Variables > Actions`*
-      
-    - *Create 2 Repository Secrets:*
+6. **Create Repository Secrets** 🤐
+    - *`{Cloned_Repo_Name} > Settings > Secrets and Variables > Actions`*
+    - Create 2 Repository Secrets:
         1. ***PERSONAL_ACCESS_TOKEN***
             - *`Bearer {Paste_The_Personal_Access_Token_Value_You_Copied_Earlier}`*
-              
+            
         2. ***PERSONAL_USERNAME***
             - *`{Your_Github_Username}`*
 
-6. **Profit** 💸
+7. **Profit** 💸
 
 ---
 
@@ -100,7 +101,7 @@ def check_user_api_info(self, threshold=4000):
 ---
 
 ## Running Project Locally
-Cloning your fork to your local machine may leave you with import errors in the python scripts. If your IDE does not automatically provide a solution for these, you will have to create a quick `virtual environment` in your `project directory` to install the requirements from the `terminal` & work from there.
+Cloning the project to your local machine may leave you with import errors in the python scripts. If your IDE does not automatically provide a solution for these, you will have to create a quick `virtual environment` in your `project directory` to install the requirements from the `terminal` & work from there.
 > [!NOTE]
 > For this project, make sure your IDE's `default interpreter` uses the environment's `python.exe` once it's created.
 1. Create Environment:
@@ -136,35 +137,51 @@ Cloning your fork to your local machine may leave you with import errors in the 
 
 ## References
 
-For more information explaining previous topics and documentation used for communicating with Github API, the following links have be curated:
+For more information explaining previous topics and all documentation used for creating this project, the following links have be curated:
 
-* [Creating a Personal Access Token (Classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
+##### Vercel
 
-* [Personal Access Token Scopes](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes)
+* <a href="https://vercel.com/docs/deploy-button" target="_blank" rel="noopener noreferrer">Working with the Deploy Button</a>
 
-* [Authenticating to the REST API](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28)
+* <a href="https://vercel.com/docs/project-configuration" target="_blank" rel="noopener noreferrer">Configuring Projects with Vercel.json</a>
 
-* [Rate Limits for the REST API](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users)
+##### Personal Access Tokens
 
-* [GitHub Actions Allowance](https://docs.github.com/en/billing/concepts/product-billing/github-actions)
+* <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic" target="_blank" rel="noopener noreferrer">Creating a Personal Access Token (Classic)</a>
 
-* [Using Pagination in the REST API](https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api?apiVersion=2022-11-28)
+* <a href="https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes" target="_blank" rel="noopener noreferrer">Personal Access Token Scopes</a>
 
-* [REST API endpoints for Followers](https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28&versionId=free-pro-team%40latest&restPage=using-pagination-in-the-rest-api#list-followers-of-the-authenticated-user)
+##### API Rates & Actions Allowances
 
-* [REST API endpoints for Starring](https://docs.github.com/en/rest/activity/starring?apiVersion=2022-11-28#star-a-repository-for-the-authenticated-user)
+* <a href="https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users" target="_blank" rel="noopener noreferrer">Rate Limits for the REST API</a>
 
-* [REST API endpoints for Repositories](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user)
+* <a href="https://docs.github.com/en/billing/concepts/product-billing/github-actions" target="_blank" rel="noopener noreferrer">GitHub Actions Allowance</a>
 
-* [Workflow Syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
+##### REST API Endpoints & Practices
 
-* [Github Actions Events: Schedule](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
+* <a href="https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28" target="_blank" rel="noopener noreferrer">Authenticating to the REST API</a>
 
-* [Using Secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
+* <a href="https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api?apiVersion=2022-11-28" target="_blank" rel="noopener noreferrer">Using Pagination in the REST API</a>
 
-* [Github Actions Extensions](https://github.com/marketplace?verification=verified_creator&type=actions)
+* <a href="https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28&versionId=free-pro-team%40latest&restPage=using-pagination-in-the-rest-api#list-followers-of-the-authenticated-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Followers</a>
 
-* [Creating Virtual Environments](https://docs.python.org/3/library/venv.html)
+* <a href="https://docs.github.com/en/rest/activity/starring?apiVersion=2022-11-28#star-a-repository-for-the-authenticated-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Starring</a>
+
+* <a href="https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Repositories</a>
+
+##### Github Actions
+
+* <a href="https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax" target="_blank" rel="noopener noreferrer">Workflow Syntax for GitHub Actions</a>
+
+* <a href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule" target="_blank" rel="noopener noreferrer">Github Actions Events: Schedule</a>
+
+* <a href="https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets" target="_blank" rel="noopener noreferrer">Using Secrets in GitHub Actions</a>
+
+* <a href="https://github.com/marketplace?verification=verified_creator&type=actions" target="_blank" rel="noopener noreferrer">Github Actions Extensions</a>
+
+##### Python Virtual Environments
+
+* <a href="https://docs.python.org/3/library/venv.html" target="_blank" rel="noopener noreferrer">Creating Virtual Environments: venv</a>
 
 ---
 
