@@ -141,7 +141,7 @@ Cloning the project to your local machine may leave you with import errors in th
 
 ## References
 
-For more information explaining previous topics and all documentation used for creating this project, the following links have be curated:
+For more information explaining previous topics and all documentation used for creating this project, the following links have been curated:
 
 ##### Vercel
 
