@@ -1,5 +1,10 @@
-# Github-Follow-N-Star-Action ⭐
-A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process and `Vercel` to simplify cloning this repository for users to their Github account.
+<div align="center">
+  <h1>Github-Follow-N-Star-Action ⭐</h1>
+  
+  A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process and `Vercel` to simplify cloning this repository for users to their Github account.
+
+  <img src="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/actions/workflows/actions.yml/badge.svg" alt="Workflow Status Badge"></img>
+</div>
 
 
 <br />
