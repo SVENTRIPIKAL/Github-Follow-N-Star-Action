@@ -150,47 +150,49 @@ For more information explaining previous topics and all documentation used for c
 
 ##### Vercel
 
-* <a href="https://vercel.com/docs/deploy-button" target="_blank" rel="noopener noreferrer">Working with the Deploy Button</a>
+* [Working with the Deploy Button](https://vercel.com/docs/deploy-button)
 
-* <a href="https://vercel.com/docs/project-configuration" target="_blank" rel="noopener noreferrer">Configuring Projects with Vercel.json</a>
+* [Configuring Projects with Vercel.json](https://vercel.com/docs/project-configuration)
 
 ##### Personal Access Tokens
 
-* <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic" target="_blank" rel="noopener noreferrer">Creating a Personal Access Token (Classic)</a>
+* [Creating a Personal Access Token (Classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic)
 
-* <a href="https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes" target="_blank" rel="noopener noreferrer">Personal Access Token Scopes</a>
+* [Personal Access Token Scopes](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/scopes-for-oauth-apps#available-scopes)
 
 ##### API Rates & Actions Allowances
 
-* <a href="https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users" target="_blank" rel="noopener noreferrer">Rate Limits for the REST API</a>
+* [Rate Limits for the REST API](https://docs.github.com/en/rest/using-the-rest-api/rate-limits-for-the-rest-api?apiVersion=2022-11-28#primary-rate-limit-for-authenticated-users)
 
-* <a href="https://docs.github.com/en/billing/concepts/product-billing/github-actions" target="_blank" rel="noopener noreferrer">GitHub Actions Allowance</a>
+* [GitHub Actions Allowance](https://docs.github.com/en/billing/concepts/product-billing/github-actions)
 
 ##### REST API Endpoints & Practices
 
-* <a href="https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28" target="_blank" rel="noopener noreferrer">Authenticating to the REST API</a>
+* [Authenticating to the REST API](https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api?apiVersion=2022-11-28)
 
-* <a href="https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api?apiVersion=2022-11-28" target="_blank" rel="noopener noreferrer">Using Pagination in the REST API</a>
+* [Using Pagination in the REST API](https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api?apiVersion=2022-11-28)
 
-* <a href="https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28&versionId=free-pro-team%40latest&restPage=using-pagination-in-the-rest-api#list-followers-of-the-authenticated-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Followers</a>
+* [REST API endpoints for Followers](https://docs.github.com/en/rest/users/followers?apiVersion=2022-11-28&versionId=free-pro-team%40latest&restPage=using-pagination-in-the-rest-api#list-followers-of-the-authenticated-user)
 
-* <a href="https://docs.github.com/en/rest/activity/starring?apiVersion=2022-11-28#star-a-repository-for-the-authenticated-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Starring</a>
+* [REST API endpoints for Starring](https://docs.github.com/en/rest/activity/starring?apiVersion=2022-11-28#star-a-repository-for-the-authenticated-user)
 
-* <a href="https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user" target="_blank" rel="noopener noreferrer">REST API endpoints for Repositories</a>
+* [REST API endpoints for Repositories](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#list-repositories-for-a-user)
 
 ##### Github Actions
 
-* <a href="https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax" target="_blank" rel="noopener noreferrer">Workflow Syntax for GitHub Actions</a>
+* [Adding a Workflow Status Badge](https://docs.github.com/en/actions/how-tos/monitor-workflows/add-a-status-badge)
 
-* <a href="https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule" target="_blank" rel="noopener noreferrer">Github Actions Events: Schedule</a>
+* [Workflow Syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-syntax)
 
-* <a href="https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets" target="_blank" rel="noopener noreferrer">Using Secrets in GitHub Actions</a>
+* [Github Actions Events: Schedule](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule)
 
-* <a href="https://github.com/marketplace?verification=verified_creator&type=actions" target="_blank" rel="noopener noreferrer">Github Actions Extensions</a>
+* [Using Secrets in GitHub Actions](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/use-secrets)
+
+* [Github Actions Extensions](https://github.com/marketplace?verification=verified_creator&type=actions)
 
 ##### Python Virtual Environments
 
-* <a href="https://docs.python.org/3/library/venv.html" target="_blank" rel="noopener noreferrer">Creating Virtual Environments: venv</a>
+* [Creating Virtual Environments: venv](https://docs.python.org/3/library/venv.html)
 
 ---
 
