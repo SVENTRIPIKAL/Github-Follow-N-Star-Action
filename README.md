@@ -1,7 +1,7 @@
 <div align="center">
   <h1>Github-Follow-N-Star-Action ⭐</h1>
   
-  A weekly `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process and `Vercel` to simplify cloning this repository for users to their Github account.
+  A daily `Github Actions` program that helps users follow back their Github followers & star their top-4 repositories. This repository uses `Github Actions` to automate this process and `Vercel` to simplify cloning this repository for users to their Github account.
 
   <img src="https://github.com/SVENTRIPIKAL/Github-Follow-N-Star-Action/actions/workflows/actions.yml/badge.svg" alt="Workflow Status Badge"></img>
 </div>
@@ -75,12 +75,12 @@
     - *Manual executions can be achieved by visiting the repository's `Actions` section, selecting the `Follow-N-Star-Action` workflow, and clicking `Run Workflow`*
 
 - **Scheduled:**
-    - *The program is scheduled to execute `@12pm every Wednesday`. This can be changed in the `.github/workflows/actions.yml` file by adjusting the `Cron Expression` to fit your needs*
+    - *The program is scheduled to execute `@12pm every day`. This can be changed in the `.github/workflows/actions.yml` file by adjusting the `Cron Expression` to fit your needs*
 
 ```yaml
 on:
   schedule:
-    - cron: '0 12 * * WED'  # run @12pm every Wednesday (~4x/month)
+    - cron: '0 12 * * *'  # run @12pm every day
 ```
 
 ---

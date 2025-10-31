@@ -2,7 +2,7 @@ name: Follow-N-Star-Action
 
 on:
   schedule:
-    - cron: '0 12 * * WED'  # run @12pm every Wednesday (~4x/month)
+    - cron: '0 12 * * *'    # run @12pm every day
   workflow_dispatch:        # allow manual deployments
 
 jobs:
@@ -11,7 +11,7 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v5.0.0   # check-out repository
+        uses: actions/checkout@v5.0.0       # check-out repository
 
       - name: Setup Python
         uses: actions/setup-python@v6.0.0   # install python version
