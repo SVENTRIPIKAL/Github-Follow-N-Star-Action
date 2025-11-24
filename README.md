@@ -110,10 +110,10 @@ def check_user_api_info(self, threshold=4000):
 ---
 
 ## Running Project Locally
-Cloning the project to your local machine will leave you with import errors & an inability for the program to access your `github secrets`. To remedy this, you need to create a quick `virtual environment` to install the project requirements, as well as a `.env` file containing your github secrets that can be accessed locally by the program as environment variables. Both will be located in your project directory.
+Cloning the project to your local machine will leave you with import errors & an inability for the program to access your `github secrets`. To remedy this, you need to create a quick `virtual environment` to install the project requirements, as well as a `.env` file containing your github secrets that can be accessed locally by the program as environment variables. Both will be located in your project's root directory.
 
 > [!WARNING]
-> Ensure the `venv` directory & `.env` file are being ignored by `git` if you plan to push changes to your repository!
+> Ensure `venv` directories & `.env` files are being ignored by `git` before pushing changes to your repository!
 
 1. Create Environment:
     ```linux
@@ -205,11 +205,13 @@ For more information explaining previous topics and all documentation used for c
 
 * [Creating Virtual Environments: venv](https://docs.python.org/3/library/venv.html)
 
-##### Locally Managing Environment Secrets
+##### Securely Managing Environment Secrets
 
 * [Using a .env File with Github Actions](https://stackoverflow.com/questions/60176044/how-do-i-use-an-env-file-with-github-actions)
 
-* [Using Python-Dotenv to Load Environment Variables from .env](https://www.getorchestra.io/guides/using-os-environ-with-local-settings-in-vs-code-settings-json)
+* [Configuring Git to Ignore Files & Directories](https://docs.github.com/en/get-started/git-basics/ignoring-files)
+
+* [Loading Environment Variables from a .env File](https://www.getorchestra.io/guides/using-os-environ-with-local-settings-in-vs-code-settings-json)
 
 ---
 

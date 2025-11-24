@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
     
-      - name: Create .env File  # create .env file & append variable secrets
+      - name: Create .env File  # create .env file & append environment secrets
         run: |
           touch .env
           echo PERSONAL_USERNAME=${{ secrets.PERSONAL_USERNAME }} >> .env
