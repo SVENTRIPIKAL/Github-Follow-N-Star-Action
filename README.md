@@ -110,9 +110,11 @@ def check_user_api_info(self, threshold=4000):
 ---
 
 ## Running Project Locally
-Cloning the project to your local machine may leave you with import errors in the python scripts. If your IDE does not automatically provide a solution for these, you will have to create a quick `virtual environment` in your `project directory` to install the requirements from the `terminal` & work from there.
-> [!NOTE]
-> For this project, make sure your IDE's `default interpreter` uses the environment's `python.exe` once it's created.
+Cloning the project to your local machine will leave you with import errors & an inability for the program to access your `github secrets`. To remedy this, you need to create a quick `virtual environment` to install the project requirements, as well as a `.env` file containing your github secrets that can be accessed locally by the program as environment variables. Both will be located in your project directory.
+
+> [!WARNING]
+> Ensure the `venv` directory & `.env` file are being ignored by `git` if you plan to push changes to your repository!
+
 1. Create Environment:
     ```linux
     python -m venv venv
@@ -134,8 +136,17 @@ Cloning the project to your local machine may leave you with import errors in th
     (venv)
     pip install -r ./requirements.txt
     ```
+    
+    > [!NOTE]
+    > To consolidate project requirements, set your IDE's `default interpreter` to the environment's `python.exe`.
 
-    Once complete, your import errors should be gone and all `project requirements` can be found in `./venv/Lib/site-packages`
+5. Create a .env File with your Repository Secrets:
+    ```
+    PERSONAL_USERNAME = "{Your_Github_Username}"
+    PERSONAL_ACCESS_TOKEN = "Bearer {Personal_Access_Token_Value}"
+    ```
+
+    Once complete, import errors will be gone & the program should run with successful Github API authentication. All `project requirements` can then be found in `./venv/Lib/site-packages`.
 
 ---
 
@@ -193,6 +204,12 @@ For more information explaining previous topics and all documentation used for c
 ##### Python Virtual Environments
 
 * [Creating Virtual Environments: venv](https://docs.python.org/3/library/venv.html)
+
+##### Locally Managing Environment Secrets
+
+* [Using a .env File with Github Actions](https://stackoverflow.com/questions/60176044/how-do-i-use-an-env-file-with-github-actions)
+
+* [Using Python-Dotenv to Load Environment Variables from .env](https://www.getorchestra.io/guides/using-os-environ-with-local-settings-in-vs-code-settings-json)
 
 ---
 
