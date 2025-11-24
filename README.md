@@ -136,9 +136,9 @@ Cloning the project to your local machine will leave you with import errors & an
     (venv)
     pip install -r ./requirements.txt
     ```
-    
-    > [!NOTE]
-    > To consolidate project requirements, set your IDE's `default interpreter` to the environment's `python.exe`.
+
+> [!NOTE]
+> To consolidate project requirements, set your IDE's `default interpreter` to the environment's `python.exe`.
 
 5. Create a .env File with your Repository Secrets:
     ```
