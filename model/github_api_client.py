@@ -2,13 +2,16 @@ import os
 import asyncio
 import aiohttp
 import tenacity
+from dotenv import load_dotenv
 
+
+# LOAD .ENV VARIABLES
+load_dotenv()
 
 # API AUTHENTICATION
 headers = {
     "Authorization": os.environ["PERSONAL_ACCESS_TOKEN"]
 }
-
 
 # URL
 GET = "get"
@@ -85,10 +88,12 @@ class GithubApiClient:
 
     def print_user_api_info(self):
         """ prints user current API information """
+        # trisect user-specific api limit
+        trisect = int(self.api_limit / 3)
         # color code used info
-        if self.api_used <= 1666:
+        if self.api_used <= trisect:
             color = GREEN
-        elif self.api_used <= 3332:
+        elif self.api_used <= (trisect * 2):
             color = YELLOW
         else:
             color = RED

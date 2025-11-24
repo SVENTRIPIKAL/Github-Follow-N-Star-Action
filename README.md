@@ -7,7 +7,7 @@
 </div>
 
 
-<br />
+<br/>
 <details>
   <summary><strong>Table of Contents</strong></summary>
   
@@ -21,7 +21,7 @@
   - [Inspiration](#inspiration)
   
 </details>
-<br />
+<br/>
 
 
 ## Initial Setup
