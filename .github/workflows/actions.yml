@@ -11,10 +11,10 @@ jobs:
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v5.0.0       # check-out repository
+        uses: actions/checkout@master       # check-out repository
 
       - name: Setup Python
-        uses: actions/setup-python@v6.0.0   # install python version
+        uses: actions/setup-python@master   # install python version
         with:
           python-version: '3.13'
 
@@ -40,7 +40,7 @@ jobs:
           git diff-index --quiet HEAD || (git commit -a -m "update EXPLORED_LOGINS file" --allow-empty)
 
       - name: Push Changes      # push changes to repo as action
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}     # allow read/write access for action
-          branch: main
+          branch: main      # add to main branch

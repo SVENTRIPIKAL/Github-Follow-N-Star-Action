@@ -102,7 +102,7 @@ Using the new `Personal Access Token` created earlier for this repository, API r
 ```python
 def check_user_api_info(self, threshold=4000):
 ``` 
-(`line-97` in the `model/github_api_client.py` file, which can be increased), so it's advised that users keep track of their `Actions` usage. Adjusting the `Cron Expression` to execute the program less times a month can also help with this as well.
+(`line-102` in the `model/github_api_client.py` file, which can be increased), so it's advised that users keep track of their `Actions` usage. Adjusting the `Cron Expression` to execute the program less times a month can also help with this as well.
 
 > [!TIP]
 > If the program stops early due to exceeding the `API threshold`, the workflow can be ran again after `1-hour` once the user's API rate limit has refreshed, since the program saves explored profiles to file and continues with those not saved to file (as long as `Actions` minutes remain).
@@ -110,26 +110,26 @@ def check_user_api_info(self, threshold=4000):
 ---
 
 ## Running Project Locally
-Cloning the project to your local machine will leave you with import errors & an inability for the program to access your `github secrets`. To remedy this, you need to create a quick `virtual environment` to install the project requirements, as well as a `.env` file containing your github secrets that can be accessed locally by the program as environment variables. Both will be located in your project's root directory.
+Cloning the project to your local machine will leave you with import errors & an inability for the program to access your `github secrets`. To remedy this, you need to create a quick `virtual environment` to install the project requirements, as well as a `.env` file containing your github secrets that can be accessed locally by the program as environment variables. Both will be located in your project's root directory. `NOTE: options within { } are possible commands & outputs, so choose whichever relates to your setup.`
 
 > [!WARNING]
 > Ensure `venv` directories & `.env` files are being ignored by `git` before pushing changes to your repository!
 
 1. Create Environment:
     ```linux
-    python -m venv venv
+    {python|python3} -m venv venv
     ```
 2. Activate Environment:
     ```linux
-    source ./venv/Script/activate
+    source ./venv/{bin|Scripts}/activate
     ```
 3. Verify Python & Pip Executables:
     ```linux
     (venv)
     which python pip
     
-    > .../venv/Scripts/python
-    > .../venv/Scripts/pip
+    > .../venv/{bin|Scripts}/python
+    > .../venv/{bin|Scripts}/pip
     ```
 4. Install Project Requirements:
     ```linux
@@ -146,7 +146,7 @@ Cloning the project to your local machine will leave you with import errors & an
     PERSONAL_ACCESS_TOKEN = "Bearer {Personal_Access_Token_Value}"
     ```
 
-    Once complete, import errors will be gone & the program should run with successful Github API authentication. All `project requirements` can then be found in `./venv/Lib/site-packages`.
+    Once complete, import errors will be gone & the program should run with successful Github API authentication. All `project requirements` can then be found in `./venv/Lib/../site-packages`.
 
 ---
 
